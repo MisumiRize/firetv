@@ -2,7 +2,7 @@ const EvilScan = require('evilscan')
 const ip = require('ip')
 const os = require('os')
 
-const {client} = ('./adb_client')
+const {client} = require('./adb_client')
 
 function scanSubnets(port) {
   return Object.values(os.networkInterfaces())
